@@ -20,13 +20,13 @@ useEffect(() => getProjectsData(), []);
 // define a function that will return the JSX needed once we get the data
 const loaded = () => {
     return projects.map((project) => (
-        <div>
+        <div className="project-page">
             <h1>{project.name}</h1>
             <img src={project.image} />
-            <a href={project.git}>
+        <a target="_blank" href={project.git}>
             <button>Github</button>
         </a>
-        <a href={project.live}>
+        <a target="_blank" href={project.live}>
             <button>live site</button>
         </a>
         </div>

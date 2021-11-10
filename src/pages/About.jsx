@@ -20,9 +20,11 @@ useEffect(() => getAboutData(), []);
 // define a function that will return the JSX needed once we get the data
 const loaded = () => (
     <div>
-        <h2>{about.name}</h2>
-        <h3>{about.email}</h3>
-        <p>{about.bio}</p>
+        <h2 className="about-name">{about.name}</h2>
+        <br />
+        <h3 className="about-email">{about.email}</h3>
+        <br />
+        <p className="about-bio">{about.bio}</p>
     </div>
 );
 
