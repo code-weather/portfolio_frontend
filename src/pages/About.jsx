@@ -24,6 +24,9 @@ const loaded = () => (
         <br />
         <h3 className="about-email">{about.email}</h3>
         <br />
+        <img src={about.image} /> 
+        {/* Do not have a headshot photo, thus replaced a picture of one. Cannot add headshot image on the about page */}
+        <br />
         <p className="about-bio">{about.bio}</p>
     </div>
 );
